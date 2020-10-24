@@ -5,33 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='styling.css'>
   <link rel="stylesheet" href="http://localhost:3000/style.css">
-  <title>KickStarter</title>
+  <script src='htmlFunctions.js'></script>
+  <title>Kickstarter</title>
 </head>
 <body>
   <div class='topHeader'>
     <section class='leftHeader'>
-      <a href='' class='explore'>Explore</a>
-      <a href='' class='start'>Start a project</a>
+      <a href='javascript:;' class='explore'>Explore</a>
+      <a href='javascript:;' class='start'>Start a project</a>
     </section>
     <section class='middleHeader'>
-      <a href='' class='title'>KICKSTARTER</a>
+      <a href='javascript:;' class='title'>KICKSTARTER</a>
     </section>
     <section class='rightHeader'>
-      <a href='' class='search'>Search
+      <a href='javascript:;' class='search'>Search
         <img src='https://i.imgur.com/WIhhz5X.png' class='magnifyingGlass'>
       </a>
-      <a href='' class='login'>Log in</a>
+      <a href='javascript:;' class='login'>Log in</a>
     </section>
   </div>
-  <div class='components'>
-    <div id='community'></div>
-    <div id='pledge'></div>
-    <div id='header'></div>
-    <div id='updates'></div>
+  <div id='header'></div>
+  <div class='componentContainer'>
+    <div class='components'>
+      <a href='javascript:;' class='pledge' onclick='showOrHide(event)'>Campaign</a>
+      <a href='javascript:;' class='updates' onclick='showOrHide(event)'>Updates</a>
+      <a href='javascript:;' class='community' onclick='showOrHide(event)'>Community</a>
+    </div>
   </div>
-  <script src="http://localhost:3000/bundle.js"></script>
-  <script src="http://localhost:3003/bundle.js"></script>
-  <script src="http://localhost:3004/bundle.js"></script>
-  <script src="http://localhost:3007/bundle.js"></script>
+  <script id='community' src="http://localhost:3000/bundle.js"></script>
+  <script id='pledge' src="http://localhost:3003/bundle.js"></script>
+  <script id='header' src="http://localhost:3004/bundle.js"></script>
+  <script id='updates' src="http://localhost:3007/bundle.js"></script>
 </body>
 </html>

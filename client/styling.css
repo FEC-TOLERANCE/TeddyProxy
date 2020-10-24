@@ -61,3 +61,61 @@
   width: 15px;
   height: 15px;
 }
+
+.componentContainer {
+  border-top: 1px solid #DCDEDD;
+  border-bottom: 1px solid #DCDEDD;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: table;
+}
+
+.components {
+  width: 100%;
+  height: auto;
+}
+
+.pledge {
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 1.8rem;
+  text-decoration: none;
+  color: #282828;
+}
+
+.updates {
+  float: left;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #282828;
+}
+
+.community {
+  float: left;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #282828;
+}
+
+#community {
+  display: none;
+}
+
+#campaign {
+  display: none;
+}
+
+#pledge {
+  display: block;
+}
+
+#updates {
+  display: none;
+}

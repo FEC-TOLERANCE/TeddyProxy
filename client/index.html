@@ -3,16 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KickStarter</title>
+  <link rel='stylesheet' href='styling.css'>
+  <link rel="stylesheet" href="http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/style.css">
+  <link rel="stylesheet" href="http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/styles.css">
+  <link rel='stylesheet' href='http://3.12.73.115:3004/styles.css'>
+  <link rel='stylesheet' href='http://ec2-3-128-76-202.us-east-2.compute.amazonaws.com:3007/styles.css'>
+  <script src='htmlFunctions.js'></script>
+  <title>Kickstarter</title>
 </head>
 <body>
-  <div id='community'></div>
-  <div id='pledge'></div>
+  <div class='topHeader'>
+    <section class='leftHeader'>
+      <a href='javascript:;' class='explore'>Explore</a>
+      <a href='javascript:;' class='start'>Start a project</a>
+    </section>
+    <section class='middleHeader'>
+      <a href='javascript:;' class='title'>KICKSTARTER</a>
+    </section>
+    <section class='rightHeader'>
+      <a href='javascript:;' class='search'>Search
+        <img src='https://i.imgur.com/WIhhz5X.png' class='magnifyingGlass'>
+      </a>
+      <a href='javascript:;' class='login'>Log in</a>
+    </section>
+  </div>
   <div id='header'></div>
-  <div id='updates'></div>
-  <script src="http://localhost:3000/bundle.js"></script>
-  <script src="http://localhost:3003/bundle.js"></script>
-  <script src="http://localhost:3004/bundle.js"></script>
-  <script src="http://localhost:3007/bundle.js"></script>
+  <div class='componentContainer'>
+    <div class='components'>
+      <a href='javascript:;' class='campaign' onclick='showOrHide(event)'>Campaign</a>
+      <a href='javascript:;' class='updates' onclick='showOrHide(event)'>Updates</a>
+      <a href='javascript:;' class='community' onclick='showOrHide(event)'>Community</a>
+    </div>
+  </div>
+  <div class='campaignComponent'>
+    <script id='pledge' src='http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/bundle.js'></script>
+  </div>
+  <script id='community' src='http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/bundle.js'></script>
+  <script id='header' src='http://3.12.73.115:3004/bundle.js'></script>
+  <script id='updates' src='http://ec2-3-128-76-202.us-east-2.compute.amazonaws.com:3007/bundle.js'></script>
 </body>
 </html>

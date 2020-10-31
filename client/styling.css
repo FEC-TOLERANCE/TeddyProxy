@@ -1,0 +1,130 @@
+.topHeader {
+  width: 100%;
+  border-bottom: 0.1rem solid #DCDEDD;
+  display: flex;
+}
+
+.leftHeader {
+  padding-left: 1.0rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  min-width: 40%;
+}
+
+.explore {
+  margin-right: 1.2rem;
+  align-items: center;
+  color: #282828;
+  text-decoration: none;
+}
+
+.start {
+  padding-right: 1.8rem;
+  margin-right: 1.2rem;
+  color: #282828;
+  text-decoration: none;
+}
+
+.middleHeader {
+  text-align: center;
+  width: 20%;
+  padding-right: 1.0rem;
+  padding-left: 1.0rem;
+  padding-top: 0.5rem;
+}
+
+.title {
+  text-decoration: none;
+  color: #282828;
+}
+
+.rightHeader {
+  padding-right: 1.0rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  min-width: 40%;
+  text-align: right;
+}
+
+.search {
+  text-decoration: none;
+  color: #282828;
+}
+
+.login {
+  text-decoration: none;
+  color: #282828;
+  padding-left: 0.5rem;
+}
+
+.magnifyingGlass {
+  width: 15px;
+  height: 15px;
+}
+
+.componentContainer {
+  border-top: 1px solid #DCDEDD;
+  border-bottom: 1px solid #DCDEDD;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.components {
+  width: 100%;
+  height: auto;
+}
+
+.campaign {
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 1.8rem;
+  text-decoration: none;
+  color: #282828;
+}
+
+.updates {
+  float: left;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #282828;
+}
+
+.community {
+  float: left;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #282828;
+}
+
+#community {
+  display: none;
+}
+
+#campaign {
+  display: none;
+}
+
+#pledge {
+  display: block;
+  float: right;
+  width: 30%;
+  position: sticky;
+  overflow-y: scroll;
+  padding-left: 60px;
+  right: 25%;
+  height: 90vh;
+}
+
+#updates {
+  display: none;
+}

@@ -3,7 +3,7 @@ const showOrHide = (e) => {
     document.getElementById('community').style.display = 'block';
     document.getElementById('pledge').style.display = 'none';
     document.getElementById('updates').style.display = 'none';
-  } else if (e.target.className == 'pledge') {
+  } else if (e.target.className == 'campaign') {
     document.getElementById('pledge').style.display = 'block';
     document.getElementById('community').style.display = 'none';
     document.getElementById('updates').style.display = 'none';

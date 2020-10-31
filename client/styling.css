@@ -68,6 +68,8 @@
   padding-left: 50px;
   padding-right: 50px;
   display: table;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .components {
@@ -75,7 +77,7 @@
   height: auto;
 }
 
-.pledge {
+.campaign {
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -114,6 +116,13 @@
 
 #pledge {
   display: block;
+  float: right;
+  width: 30%;
+  position: sticky;
+  overflow-y: scroll;
+  padding-left: 60px;
+  right: 25%;
+  height: 90vh;
 }
 
 #updates {

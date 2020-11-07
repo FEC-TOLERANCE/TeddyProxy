@@ -70,11 +70,18 @@
   display: table;
   width: 100%;
   box-sizing: border-box;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  margin-bottom: 2%;
 }
 
 .components {
-  width: 100%;
-  height: auto;
+  max-width: 1250px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
 }
 
 .campaign {
@@ -116,15 +123,27 @@
 
 #pledge {
   display: block;
-  float: right;
-  width: 30%;
   position: sticky;
   overflow-y: scroll;
   padding-left: 60px;
-  right: 25%;
   height: 90vh;
+  float: right;
+  margin-bottom: 10%;
 }
 
 #updates {
   display: none;
+}
+
+.campaignContainer {
+  display: grid;
+  margin: auto;
+  overflow: auto;
+  justify-content: end;
+  max-width: 1300px;
+  padding-right: 2rem;
+}
+
+.individualComponents {
+  margin-bottom: 50px;
 }

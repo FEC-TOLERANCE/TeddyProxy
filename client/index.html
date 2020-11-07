@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='styling.css'>
   <link rel="stylesheet" href="http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/style.css">
   <link rel="stylesheet" href="http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/styles.css">
-  <link rel='stylesheet' href='http://3.12.73.115:3004/styles.css'>
+  <link rel='stylesheet' href='http://100.26.210.6:3004/4/styles.css'>
   <link rel='stylesheet' href='http://ec2-3-128-76-202.us-east-2.compute.amazonaws.com:3007/styles.css'>
+  <link rel='stylesheet' href='http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3001/style.css'>
   <script src='htmlFunctions.js'></script>
   <title>Kickstarter</title>
 </head>
@@ -18,7 +20,7 @@
       <a href='javascript:;' class='start'>Start a project</a>
     </section>
     <section class='middleHeader'>
-      <a href='javascript:;' class='title'>KICKSTARTER</a>
+      <a href='javascript:;' class='title'>Kickstarter</a>
     </section>
     <section class='rightHeader'>
       <a href='javascript:;' class='search'>Search
@@ -35,11 +37,18 @@
       <a href='javascript:;' class='community' onclick='showOrHide(event)'>Community</a>
     </div>
   </div>
-  <div class='campaignComponent'>
-    <script id='pledge' src='http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/bundle.js'></script>
+  <div class='individualComponents'>
+    <div class='campaignContainer'>
+      <div id='pledge'></div>
+    </div>
+    <div id='community'></div>
+    <div id='updates'></div>
+    <div id='recommended'></div>
   </div>
-  <script id='community' src='http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/bundle.js'></script>
-  <script id='header' src='http://3.12.73.115:3004/bundle.js'></script>
-  <script id='updates' src='http://ec2-3-128-76-202.us-east-2.compute.amazonaws.com:3007/bundle.js'></script>
+  <script src='http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/bundle.js'></script>
+  <script src='http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/bundle.js'></script>
+  <script src='http://100.26.210.6:3004/bundle.js'></script>
+  <script src='http://ec2-3-128-76-202.us-east-2.compute.amazonaws.com:3007/bundle.js'></script>
+  <script src='http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3001/bundle.js'></script>
 </body>
 </html>
